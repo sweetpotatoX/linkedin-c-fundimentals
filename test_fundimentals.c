@@ -5,6 +5,7 @@
 int main()
 {
     int rows;
+    int irow = 0;
     char letter;
 
 
@@ -17,7 +18,7 @@ int main()
     if (rows > 18)
     {
         return puts("try again");
-        
+
     }
 
     //process the number of rows
@@ -28,10 +29,12 @@ int main()
 for (float j = 0; j < (rows/2); j++) {
     for (int i = 0, letter = 'A'; i < rows; letter++, i++) {
 
-        printf("%d", j);
+        printf("%d",irow );
+
         printf("%c", letter);
 
         printf(" ");
+
 
 
     }
@@ -39,6 +42,7 @@ for (float j = 0; j < (rows/2); j++) {
     for (int k = 0; k < rows; k++) {
         printf("===");
     }
+    irow ++;
     printf("\n");
 }
     }
